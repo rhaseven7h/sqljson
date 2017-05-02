@@ -1,6 +1,6 @@
 # Golang (Go) SQL+JSON+Validator Support for Null Database/SQL Types
 
-For fields:
+## SQL Null Field Types
 
 - sql.NullString
 - sql.NullBool
@@ -15,6 +15,8 @@ Validator library is:
 
 Allows simultaneous use of validator validations, null sql values in struct fields for database/sql, and still support JSON Marshal and Unmarshal for those Null* fields.
 
-TODO: Add instruction on registering validator custom types.
+## Usage
 
-TODO: Add basic usage.
+Please see integration test files, in particular those for validation.
+
+You need to register custom types for validator. See how it is done in integration tests too.
