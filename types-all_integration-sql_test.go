@@ -3,7 +3,7 @@ package sqljson_test
 import (
 	"testing"
 
-	"github.com/Rhaseven7h/sqljson"
+	"github.com/rhaseven7h/sqljson"
 
 	sqlmock "github.com/DATA-DOG/go-sqlmock"
 	. "github.com/smartystreets/goconvey/convey"

@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"testing"
 
-	"github.com/Rhaseven7h/sqljson"
+	"github.com/rhaseven7h/sqljson"
 
 	validator "gopkg.in/go-playground/validator.v9"
 

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/Rhaseven7h/sqljson"
+	"github.com/rhaseven7h/sqljson"
 	. "github.com/smartystreets/goconvey/convey"
 )
 
