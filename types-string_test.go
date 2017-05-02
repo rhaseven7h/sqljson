@@ -59,7 +59,7 @@ func TestNullStringValidateValuer(t *testing.T) {
 	})
 }
 
-func TestMarshalJSON(t *testing.T) {
+func TestStringMarshalJSON(t *testing.T) {
 	Convey("Given a non-empty sqljson.NullString string value", t, func() {
 		valueIn := sqljson.NullString{
 			NullString: sql.NullString{
@@ -107,7 +107,7 @@ func TestMarshalJSON(t *testing.T) {
 	})
 }
 
-func TestUnmarshalJSON(t *testing.T) {
+func TestStringUnmarshalJSON(t *testing.T) {
 	Convey("Given a sqljson.NullString value pointer, and an empty JSON value (empty, not just null)", t, func() {
 		ns := &sqljson.NullString{}
 		bJSON := []byte(``)
@@ -247,7 +247,7 @@ func TestUnmarshalJSON(t *testing.T) {
 func TestStringPtrOrNil(t *testing.T) {
 	Convey("Given a valid non-Null NullString value", t, func() {
 		value := sqljson.NullString{
-			sql.NullString{
+			NullString: sql.NullString{
 				String: "somemail@someserver.net",
 				Valid:  true,
 			},
@@ -262,7 +262,7 @@ func TestStringPtrOrNil(t *testing.T) {
 	})
 	Convey("Given a valid null NullString value", t, func() {
 		value := sqljson.NullString{
-			sql.NullString{
+			NullString: sql.NullString{
 				String: "",
 				Valid:  false,
 			},
